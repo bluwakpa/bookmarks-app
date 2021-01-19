@@ -1,6 +1,6 @@
 import React, { Component } from  'react';
 import BookmarksContext from '../BookmarksContext';
-import config from '../config';
+import config from '../config'
 import './AddBookmark.css';
 
 const Required = () => (
@@ -52,6 +52,7 @@ class AddBookmark extends Component {
         this.props.history.push('/')
       })
       .catch(error => {
+        console.log(error)
         this.setState({ error })
       })
   }
